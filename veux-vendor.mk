@@ -998,6 +998,9 @@ PRODUCT_PACKAGES += \
     libsdmextension \
     libsdsprpc \
     libsensorslog \
+    libStDrvInt \
+    libsecureui \
+    libsecureui_svcsock \
     libsl_fp_impl \
     libsn100u_fw \
     libsnapdragoncolor-manager \
