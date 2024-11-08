@@ -824,14 +824,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "audio.primary.veux",
+	name: "audio.primary.holi",
 	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/audio.primary.veux.so"],
+			srcs: ["proprietary/vendor/lib/hw/audio.primary.holi.so"],
 			shared_libs: ["libbase", "liblog", "libcutils", "libtinyalsa", "libtinycompress", "libaudioroute", "libaudioutils", "libexpat", "libhidlbase", "libprocessgroup", "libutils", "libaudio_log_utils", "android.hardware.power@1.2", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -930,14 +930,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "liba2dpoffload_veux",
+	name: "liba2dpoffload",
 	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/liba2dpoffload_veux.so"],
+			srcs: ["proprietary/vendor/lib/liba2dpoffload.so"],
 			shared_libs: ["libaudioutils", "libcutils", "liblog", "libtinyalsa", "libtinycompress", "libaudioroute", "libexpat", "libaudio_log_utils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
