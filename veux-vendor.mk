@@ -562,13 +562,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.qspmhal@1.0 \
     btaudio_offload_if \
-    audio.primary.veux \
+    audio.primary.holi \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
     libFileMux_proprietary \
     libOmxDsdDec \
     libOmxVideoDSMode \
-    liba2dpoffload_veux \
+    liba2dpoffload \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
