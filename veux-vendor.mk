@@ -801,7 +801,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl-qti \
     camera.qcom \
     com.qti.chi.override \
-    consumerir.holi \
     fingerprint.fpc.default \
     fingerprint.goodix.default \
     fingerprint.silead.default \
