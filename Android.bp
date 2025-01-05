@@ -13309,6 +13309,13 @@ cc_prebuilt_binary {
 }
 
 install_symlink {
+	name: "libwfdnative_libwfdnative_symlink64",
+	system_ext_specific: true,
+	installed_location: "priv-app/WfdService/lib/arm64/libwfdnative.so",
+	symlink_target: "/system_ext/lib64/libwfdnative.so",
+}
+
+install_symlink {
 	name: "libEGL_adreno_libEGL_adreno_symlink32",
 	soc_specific: true,
 	installed_location: "lib/libEGL_adreno.so",
