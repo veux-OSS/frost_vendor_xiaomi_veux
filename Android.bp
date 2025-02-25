@@ -150,6 +150,49 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libVkLayer_ADRENO_qprofiler",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so"],
+			shared_libs: ["liblog", "libm", "libdl", "libc", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so"],
+			shared_libs: ["liblog", "libm", "libdl", "libc", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "egl",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libllvm-qgl",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libllvm-qgl.so"],
+			shared_libs: ["libgsl", "liblog", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libllvm-qgl.so"],
+			shared_libs: ["libgsl", "liblog", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "vulkan.adreno",
 	owner: "xiaomi",
 	strip: {
@@ -201,11 +244,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libCB.so"],
-			shared_libs: ["libcutils", "liblog", "libgsl", "libutils", "libnativewindow", "libvndksupport", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.mapper@4.0", "android.hardware.graphics.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
+			 shared_libs: ["android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "libc++", "libcutils", "libgralloc.qti", "libgralloctypes", "libgsl", "libhidlbase", "liblog", "libnativewindow", "libutils", "libvndksupport", "vendor.qti.hardware.display.mapper@3.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.0", "vendor.qti.hardware.display.mapperextensions@1.1"],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libCB.so"],
-			shared_libs: ["libcutils", "liblog", "libgsl", "libutils", "libnativewindow", "libvndksupport", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.mapper@4.0", "android.hardware.graphics.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
+			 shared_libs: ["android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "libc++", "libcutils", "libgralloc.qti", "libgralloctypes", "libgsl", "libhidlbase", "liblog", "libnativewindow", "libutils", "libvndksupport", "vendor.qti.hardware.display.mapper@3.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.0", "vendor.qti.hardware.display.mapperextensions@1.1"],
 		},
 	},
 	compile_multilib: "both",
@@ -453,11 +496,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libgsl.so"],
-			shared_libs: ["libcutils", "liblog", "libz", "libsync", "libion", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libc++", "libcutils", "libdmabufheap", "liblog", "libsync", "libz"],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libgsl.so"],
-			shared_libs: ["libcutils", "liblog", "libz", "libsync", "libion", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libc++", "libcutils", "libdmabufheap", "liblog", "libsync", "libz"],
 		},
 	},
 	compile_multilib: "both",
@@ -516,11 +559,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libllvm-glnext.so"],
-			shared_libs: ["libgsl", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libgsl", "libc++", "liblog"],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libllvm-glnext.so"],
-			shared_libs: ["libgsl", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libgsl", "libc++", "liblog"],
 		},
 	},
 	compile_multilib: "both",
